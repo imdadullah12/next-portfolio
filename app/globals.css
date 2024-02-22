@@ -31,3 +31,42 @@ body {
     text-wrap: balance;
   }
 }
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.marquee {
+  display: inline-block;
+  padding-right: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.globe {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+u {
+  text-decoration-color: #2cf8ff !important;
+  text-underline-offset: 7px;
+}
+
+/* .bar {
+  will-change: height, width !important;
+  height: 43.9842% !important;
+} */
